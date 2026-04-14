@@ -7,7 +7,6 @@ Single-page personal website with static content initially, designed to be exten
 From the repo root:
 
 ```bash
-cd personal-site
 npm install
 npm run dev
 ```
@@ -15,7 +14,6 @@ npm run dev
 Production build:
 
 ```bash
-cd personal-site
 npm run build
 npm run preview
 ```
@@ -24,29 +22,29 @@ npm run preview
 
 Update your profile details in:
 
-- `personal-site/src/content/profile.ts`
+- `src/content/profile.ts`
 
-The app reads content via `personal-site/src/content/getProfile.ts` so you can later swap it to fetch JSON or call an API without rewriting the UI.
+The app reads content via `src/content/getProfile.ts` so you can later swap it to fetch JSON or call an API without rewriting the UI.
 
 ## Profile picture
 
 Replace the placeholder profile image:
 
-- `personal-site/public/profile.svg`
+- `public/profile.jpeg`
 
-You can use `profile.jpg`/`profile.png` instead—just update the filename in `personal-site/src/sections/HeroSection.tsx`.
+You can use `profile.jpg`/`profile.png` instead—just update the filename in `src/sections/HeroSection.tsx`.
 
 ## Themes
 
 Use the theme switcher in the header. Theme tokens live in:
 
-- `personal-site/src/styles.css`
+- `src/styles.css`
 
 ## Deploy to GitHub Pages
 
 This repo includes a GitHub Actions workflow:
 
-- `personal-site/.github/workflows/deploy.yml`
+- `.github/workflows/deploy.yml`
 
 Steps:
 
